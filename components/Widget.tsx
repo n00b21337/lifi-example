@@ -13,7 +13,7 @@ export const Widget = () => {
 
   useEffect(() => {
     setContract({
-      address: "0x0c6D2c414A92D61fC2eA41942b4de319943F4E33",
+      address: "0xad0f38519442FB3Aa3Ba2b7bF3a323A238627faF",
       callData:
         "0x94bf804d0000000000000000000000000000000000000000000000000000000000000001000000000000000000000000a6b04affc92ba83d4b6ffaded0a58412892cf381",
       gasLimit: "570360",
@@ -29,7 +29,7 @@ export const Widget = () => {
   const token = {
     address: "0x0000000000000000000000000000000000000000",
     amount: "11469534050179999",
-    chainId: 5,
+    chainId: 137,
     symbol: "ETH",
     decimals: 18,
     name: "Ethereum",
@@ -54,7 +54,8 @@ export const Widget = () => {
       config={{
         variant: "nft",
         buildSwapUrl: true,
-        toChain: 5,
+        fromChain: 137,
+        toChain: 137,
         fromToken: "0x0000000000000000000000000000000000000000",
         containerStyle: {
           border: `0px solid rgb(234, 234, 234)`,
